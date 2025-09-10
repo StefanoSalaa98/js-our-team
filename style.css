@@ -4,12 +4,21 @@
     font-size:0.9rem;
 }
 
+h1{
+    font-size:3rem;
+    color:red;
+}
+
 .container{
     display:flex;
     flex-wrap: wrap;
     gap:20px;
     width:80%;
-    margin-top:100px;
+    margin-top:50px;
+}
+
+.container p{
+    font-size:1.3rem;
 }
 
 /*  regole card member */
@@ -25,6 +34,7 @@
 .card-img{
     height:100px;
     text-align:center;
+    margin:0;
 }
 
 .card-img img {
