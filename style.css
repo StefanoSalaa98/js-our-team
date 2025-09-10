@@ -1,0 +1,55 @@
+*{
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    width:1000px;
+    margin-top:200px;
+}
+
+/*  regole card member */
+.card {
+    width:calc((100% - 40px) / 3);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+}
+
+.card-img{
+    height:100px;
+    text-align:center;
+}
+
+.card-img img {
+    height: 100px;
+}
+
+.card-content {
+    color: white;
+    padding: 10px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:800px){
+
+    .card {
+        width:calc((100% - 20px) / 2);
+    }
+}
+
+@media screen and (max-width:450px){
+
+    .card {
+        width:calc(100%);
+    }
+}
