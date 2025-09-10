@@ -36,6 +36,18 @@ const teamMembers = [
     role: "Analyst",
     email: "danielaamet@team.com",
     img: "img/female3.png"
+  },
+  {
+    name: "Pippo Disney",
+    role: "Mascotte",
+    email: "pippodisney@team.com",
+    img: "img/pippo.jpg"
+  },
+  {
+    name: "GianGiacomo Giocondo",
+    role: "Intern",
+    email: "giangiacomogiocondo@team.com",
+    img: "img/work.jpg"
   }
 ];
 
@@ -45,7 +57,7 @@ for (let i=0; i<teamMembers.length; i++){
     createNewCard(teamMember)
 }
 
-cardContainer.innerHTML = cards;
+cardContainer.innerHTML += cards;
 
 function createNewCard(member){
     const {name, role, email, img} = member;
